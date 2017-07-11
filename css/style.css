@@ -1,0 +1,65 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+nav, footer {
+  color: white;
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav *, footer * {
+  margin-left: 10px;
+}
+
+footer {
+  justify-content: flex-end;
+  height: 8vh;
+  padding-right: 5vh;
+  padding-bottom: 5vh;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1vh;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.about .portrait {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait img {
+  width: 100%;
+  min-height: 100px;
+  max-height: 400px;
+}
+
+.about p {
+  flex: 2;
+  padding-left: 5vh;
+}
+
+img {
+  width: 10vw;
+  min-width: 100px;
+}
