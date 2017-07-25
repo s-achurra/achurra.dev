@@ -4,14 +4,13 @@ body {
 }
 
 main {
-  width: 80%;
   margin: auto;
 }
 
 nav, footer {
   color: white;
   background-color: black;
-  height: 10vh;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -23,7 +22,7 @@ nav *, footer * {
 
 footer {
   justify-content: flex-end;
-  height: 8vh;
+  height: 50px;
   padding-right: 5vh;
   padding-bottom: 5vh;
 }
@@ -31,6 +30,43 @@ footer {
 h1 {
   font-size: 3rem;
   margin: 1vh;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 1vh;
+  text-align: center;
+}
+
+.header {
+  height: 80vh;
+  margin: 0;
+  background-image: url('/assets/header_background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.header_contents {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait {
+  background-image: url('/assets/stephen.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
 
 .about {
@@ -38,19 +74,10 @@ h1 {
   align-items: center;
   padding-top: 5vh;
   padding-bottom: 5vh;
-}
-
-.about .portrait {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.portrait img {
-  width: 100%;
-  min-height: 100px;
-  max-height: 400px;
 }
 
 .about p {
@@ -58,7 +85,7 @@ h1 {
   padding-left: 5vh;
 }
 
-.skills picture {
+.skills {
   display: flex;
   flex-wrap: wrap;
   margin-left: 2vw;
