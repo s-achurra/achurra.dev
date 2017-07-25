@@ -3,30 +3,6 @@ body {
   font-size: 16px;
 }
 
-main {
-  margin: auto;
-}
-
-nav, footer {
-  color: white;
-  background-color: black;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-nav *, footer * {
-  margin-left: 10px;
-}
-
-footer {
-  justify-content: flex-end;
-  height: 50px;
-  padding-right: 5vh;
-  padding-bottom: 5vh;
-}
-
 h1 {
   font-size: 3rem;
   margin: 1vh;
@@ -39,7 +15,42 @@ h3 {
   text-align: center;
 }
 
+main {
+  margin: auto;
+}
+
+nav {
+  color: white;
+  background-color: black;
+  padding: 25px;
+  height: 40px;
+  width: calc(100% - 50px);
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clearfix {
+  height: 90px;
+  background-color: red;
+}
+
+.controls * {
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.controls *:hover{
+  background-color: #555555;
+}
+
 .header {
+  /*set height ot 95 to account for fixed nav
+  was set to 80
+  */
   height: 80vh;
   margin: 0;
   background-image: url('/assets/header_background.jpg');
@@ -105,4 +116,11 @@ h3 {
   max-width: 100%;
   max-height: 100%
 
+}
+
+footer {
+  justify-content: flex-end;
+  height: 50px;
+  padding-right: 5vh;
+  padding-bottom: 5vh;
 }
