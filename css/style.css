@@ -37,7 +37,7 @@ nav {
   background-color: red;
 }
 
-.controls * {
+.controls *{
   padding: 15px;
   color: white;
   text-decoration: none;
@@ -48,10 +48,7 @@ nav {
 }
 
 .header {
-  /*set height ot 95 to account for fixed nav
-  was set to 80
-  */
-  height: 80vh;
+  height: 84vh;
   margin: 0;
   background-image: url('/assets/header_background.jpg');
   background-position: center;
@@ -78,6 +75,7 @@ nav {
   border-radius: 50%;
   width: 250px;
   height: 250px;
+  margin-bottom: 25px;
 }
 
 .about {
@@ -91,13 +89,20 @@ nav {
   align-items: center;
 }
 
-.about p {
+
+#about, #skills, #projects {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#about p {
   flex: 2;
   padding-left: 5vh;
 }
 
-.skills {
-  display: flex;
+#skills {
   flex-wrap: wrap;
   margin-left: 2vw;
   margin-right: 2vw;
