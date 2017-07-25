@@ -48,7 +48,7 @@ nav {
 }
 
 .header {
-  height: 84vh;
+  height: calc(93vh - 90px);
   margin: 0;
   background-image: url('/assets/header_background.jpg');
   background-position: center;
@@ -78,6 +78,10 @@ nav {
   margin-bottom: 25px;
 }
 
+.arrow_down {
+  height: calc(7vh - 90px);
+}
+
 #about, #skills, #projects {
   width: 80%;
   margin: 0 auto;
@@ -102,6 +106,8 @@ nav {
 #about .about_text {
   flex: 4;
   display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #about .about_text p {
