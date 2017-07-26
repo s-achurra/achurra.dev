@@ -51,7 +51,7 @@ nav {
 .header {
   height: calc(93vh - 90px);
   margin: 0;
-  background-image: url('/assets/header_background.jpg');
+  background-image: url('/assets/photos/header_background.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -120,16 +120,17 @@ nav {
 
 .spacer_image {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   background-image: url('/assets/mountains.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#skills h1 {
-  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
 #skills .skill_list {
@@ -145,6 +146,25 @@ nav {
   width: 150px;
   height: 150px;
   margin: 10px 5px 10px 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#projects ul {
+  display: flex;
+}
+
+#projects li {
+  width: 400px;
+  height: 250px;
+}
+
+
+#projects .project_img {
+  width: 400px;
+  height: 250px;
+  display: block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
