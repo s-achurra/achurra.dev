@@ -38,7 +38,7 @@ nav {
   background-color: red;
 }
 
-.controls *{
+.controls *, .name{
   padding: 15px;
   color: white;
   text-decoration: none;
@@ -192,8 +192,7 @@ nav {
 }
 
 #projects .project_list a:hover {
-  background-color: #555555;
-  border-radius: 25%;
+  color: yellow;
 }
 
 @media only screen and (max-width: 1290px) {
