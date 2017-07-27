@@ -184,3 +184,28 @@ nav {
     min-width: 100px;
   }
 }
+
+#footer {
+  height: 30vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .links {
+  display: flex;
+  font-size: 3.5rem;
+}
+
+#footer .links * {
+  text-decoration: none;
+  padding: 0 10px;
+  color: white;
+}
+
+#footer .links *:hover {
+  color: #555555;
+}
