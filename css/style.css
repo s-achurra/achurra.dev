@@ -98,12 +98,15 @@ nav {
   flex-direction: column;
 }
 
+.section_title {
+  margin: 50px;
+}
+
 #about {
   flex: 1;
 }
 
-#about h1 {
-  margin: 50px;
+#about .section_title {
   flex: 1;
 }
 
@@ -151,8 +154,7 @@ nav {
   background-size: contain;
 }
 
-#projects {
-  padding-top: 0;
+.project_list {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -162,18 +164,40 @@ nav {
   padding-top: 5vh;
 }
 
+#projects {
+  display: block;
+}
+
+#projects h1 {
+  margin: 50px;
+}
+
 #projects .project_img {
   min-width: 400px;
   min-height: 250px;
   margin: 15px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+#projects .project_list a {
+  margin: 10px;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+}
+
+#projects .project_list a:hover {
+  background-color: #555555;
+  border-radius: 25%;
+}
+
 @media only screen and (max-width: 1290px) {
-  #projects {
+  .project_list {
     flex-direction: column;
     align-items: center;
     width: 100%;
