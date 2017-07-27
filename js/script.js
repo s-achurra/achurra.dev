@@ -1,5 +1,4 @@
-const navLinks = $('.controls a').click(scrollToElement);
-const homeLink = $('.name').click(scrollToElement);
+const navLinks = $('.controls a, .name').click(scrollToElement);
 
 function scrollToElement (e) {
 	e.preventDefault();
