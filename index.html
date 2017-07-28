@@ -5,15 +5,18 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <link href='css/reset.css' rel='stylesheet'>
     <link href='css/style.css' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href='css/timeline.css' rel='stylesheet'>
   </head>
-  <body id="body">
+  <body id='body'>
       <div class='clearfix'>
         <nav>
-          <h3><a class='name' href="#body">Stephen J Achurra</a></h3>
+          <h3><a class='name' href='#body'>Stephen J Achurra</a></h3>
           <section class='controls'>
             <a href='#about'>About</a>
             <a href='#skills'>Skills</a>
@@ -62,6 +65,66 @@
             dolore sit.
           </p>
         </section>
+
+        <div class="container">
+          <!-- Responsive HTML Timeline
+          Inspired by the talented Dave Rupert @ http://daverupert.com/about.html
+          from https://codepen.io/jplhomer/pen/lgfus -->
+
+          <div class="timeline">
+
+            <!-- <h2>2008</h2> -->
+            <ul>
+              <li>
+                <h3>Peninsual College</h3>
+                <img src="/assets/pc.png" alt="Peninsula College" align='left'>
+                <p>Graduate with honors and an associates degree in the arts.</p>
+                <br>
+                <time>March 2008</time>
+              </li>
+              <li>
+                <h3>University of Nevada, Reno</h3>
+                <img src="/assets/unr.png" alt="Univerisyt of Nevada, Reno" align='right'>
+                <p>Earned a Bachelors in Anthropology and a Minor in Basque Studies.</p>
+                <br>
+                <p>Graduated in the top 10% of my class.</p>
+                <br>
+                <time>December 2010</time>
+              </li>
+              <li>
+                <h3>Hired at Quantum Rewards</h3>
+                <img src="/assets/qr.jpeg" alt="Quantum Rewards" align='left'>
+                <section class="text">
+                  <p>Started as an Opportations Assistant helping anywhere possible.</p>
+                  <br>
+                  <time>March 2012</time>
+                </section>
+              </li>
+              <li>
+                <h3>Quantum Rewards is Acquired by Fandango</h3>
+                <img src="/assets/fandango.jpg" alt="Fandango" align='right'>
+                <p>Continuted on with Fandnago and managed SalesForce integration between the two companies.</p>
+                <br>
+                <time>October 2013</time>
+              </li>
+              <li>
+                <h3>Joined BlueTree Dental</h3>
+                <img src="/assets/bluetree.png" alt="BlueTree Dental" align='left'>
+                <p>As an Operations Project Manager I was able to aid in developing the structures of a new emerging business.</p>
+                <br>
+                <time>March 2015</time>
+              </li>
+              <li>
+                <h3>Persued Web Development at app Academy</h3>
+                <img src="/assets/aa.png" alt="app Academy" align='right'>
+                <p>Honed my skills as a software developer and created a foundation to take on any programming challenge.</p>
+                <br>
+                <time>March 2017</time>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </section>
 
       <section class='spacer_image' style='background-image: url(/assets/photos/mountains.jpg)'>
@@ -96,17 +159,14 @@
       <section id='projects'>
         <h1 class='section_title'>Projects</h1>
           <section class='project_list'>
-            <section class='project_img' href='https://meetsapp.herokuapp.com/' style='background-image: url(/assets/projects/MeetApp.png)'>
-              <a href='https://meetsapp.herokuapp.com/#/'><i class='fa fa-link' aria-hidden='true'></i></a>
-              <a href='https://github.com/s-achurra/Full-Stack'><i class='fa fa-github' aria-hidden='true'></i></a>
+            <section class='project_img' data-modal='MeetApp' style='background-image: url(/assets/projects/MeetApp.png)'>
+              <section class='overlay' data-modal='MeetApp'><i class='fa fa-plus-circle' aria-hidden='true'></i></section>
             </section>
-            <section class='project_img' style='background-image: url(/assets/projects/verify.png)'>
-              <a href='https://garyeh.github.io/Verify/'><i class='fa fa-link' aria-hidden='true'></i></a>
-              <a href='https://github.com/garyeh/Verify'><i class='fa fa-github' aria-hidden='true'></i></a>
+            <section class='project_img' data-modal='Verify' style='background-image: url(/assets/projects/verify.png)'>
+              <section class='overlay' data-modal='Verify'><i class='fa fa-plus-circle' aria-hidden='true'></i></section>
             </section>
-            <section class='project_img' style='background-image: url(/assets/projects/spaceInvaders.png)'>
-              <a href='https://s-achurra.github.io/JS-Project/'><i class='fa fa-link' aria-hidden='true'></i></a>
-              <a href='https://github.com/s-achurra/JS-Project'><i class='fa fa-github' aria-hidden='true'></i></a>
+            <section class='project_img' data-modal='SpaceInvaders' style='background-image: url(/assets/projects/spaceInvaders.png)'>
+              <section class='overlay' data-modal='SpaceInvaders'><i class='fa fa-plus-circle' aria-hidden='true'></i></section>
             </section>
           </section>
       </section>
@@ -123,7 +183,57 @@
         <a href=''><i class='fa fa-github-square' aria-hidden='true'></i></a>
       </section>
     </footer>
-  </body>
-  <script type='text/javascript' src='/js/hotjar.js'></script>
-  <script type='text/javascript' src='/js/script.js'></script>
+
+  <!-- Modals -->
+
+  <div id='MeetApp' class='modal'>
+
+    <div class='modal_content'>
+      <span class='close'>&times;</span>
+      <h1>MeetApp</h1>
+      <div class="create">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <section class="modal_links">
+        <a href='https://meetsapp.herokuapp.com/#/'><i class='fa fa-link' aria-hidden='true'></i></a>
+        <a href='https://github.com/s-achurra/Full-Stack'><i class='fa fa-github' aria-hidden='true'></i></a>
+      </section>
+    </div>
+
+  </div>
+
+  <div id='Verify' class='modal'>
+
+    <div class='modal_content'>
+      <span class='close'>&times;</span>
+      <h1>Verify</h1>
+      <p>This is the Verify Modal..</p>
+      <section class="modal_links">
+        <a href='https://garyeh.github.io/Verify/'><i class='fa fa-link' aria-hidden='true'></i></a>
+        <a href='https://github.com/garyeh/Verify'><i class='fa fa-github' aria-hidden='true'></i></a>
+      </section>
+    </div>
+
+  </div>
+
+  <div id='SpaceInvaders' class='modal'>
+
+    <div class='modal_content'>
+      <span class='close'>&times;</span>
+      <h1>Space Invaders</h1>
+      <p>This is the SpaceInvaders Modal..</p>
+      <section class="modal_links">
+        <a href='https://s-achurra.github.io/JS-Project/'><i class='fa fa-link' aria-hidden='true'></i></a>
+        <a href='https://github.com/s-achurra/JS-Project'><i class='fa fa-github' aria-hidden='true'></i></a>
+      </section>
+    </div>
+
+  </div>
+
+
+</body>
+<script type='text/javascript' src='/js/hotjar.js'></script>
+<script type='text/javascript' src='/js/script.js'></script>
 </html>
