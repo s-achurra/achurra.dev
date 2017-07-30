@@ -21,6 +21,4 @@ function closeModals() {
 	activeModal.css('display', 'none');
 }
 
-$('.single-item').slick();
-
 overlays.click(openModal);
