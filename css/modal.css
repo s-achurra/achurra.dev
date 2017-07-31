@@ -1,6 +1,7 @@
 .modal {
     display: none;
     position: fixed;
+    margin: 0 auto;
     transition: all 1s;
     z-index: 1;
     left: 0;
@@ -30,9 +31,20 @@
 
 .modal_text {
   margin: 10px auto 0;
+  padding: 0 40px;
   flex: 2;
-  /*width: 80%;*/
   min-width: 350px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.modal_text ul {
+  list-style: circle;
+  padding-left: 40px;
+}
+
+.modal_text li {
+  margin : 5px 0;
 }
 
 .modal_images {
@@ -68,16 +80,10 @@
 }
 
 .modal_links *:hover {
-  color: #555555;
+  color: #aa8c47;
 }
 
-@media only screen and (max-width: 710px) {
-  .modal_links {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 960px) {
   .modal_content {
     overflow: scroll;
     top: 90px;
@@ -88,20 +94,14 @@
   .modal_images {
     flex-direction: row;
   }
-}
-
-@media only screen and (max-width: 650px) {
+  .modal_links {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
   .modal_images {
     flex-direction: column;
   }
 }
-
-/*@media only screen and (max-width: 500px) {
-  .modal_content {
-
-  }
-}*/
-
 
 /* The Close Button */
 .close {
