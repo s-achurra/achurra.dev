@@ -124,6 +124,8 @@ nav {
 
 #about .about_text p {
   padding: 20px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
 
 .spacer_image {
@@ -223,8 +225,7 @@ nav {
   font-size: 4rem;
   justify-content: center;
   align-items: center;
-  justify-content:
-  color: transparent;
+  justify-content: center;
   background-color: rgba(127, 174, 254, 0.8);
 }
 
@@ -240,6 +241,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
 }
 
 #footer .links {
