@@ -118,6 +118,7 @@ nav {
 #about .about_text {
   flex: 4;
   display: flex;
+  justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -126,6 +127,15 @@ nav {
   padding: 20px;
   font-size: 1.4rem;
   line-height: 1.8rem;
+}
+
+@media only screen and (max-width: 750px) {
+  #about .about_text p {
+    min-width: 280px;
+  }
+  #about .about_text {
+    flex-wrap: wrap;
+  }
 }
 
 .spacer_image {
