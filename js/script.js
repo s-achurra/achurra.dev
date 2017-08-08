@@ -13,12 +13,14 @@ function scrollToElement (e) {
 
 function openModal () {
 	activeModal = $(`#${this.dataset.modal}`);
-	activeModal.css('display', 'block');
+	activeModal.css('visibility', 'visible');
+	activeModal.css('opacity', '1');
 	closeButtons = $('.close').click(closeModals);
 }
 
 function closeModals() {
-	activeModal.css('display', 'none');
+	activeModal.css('visibility', 'hidden');
+	activeModal.css('opacity', '0');
 }
 
 overlays.click(openModal);
