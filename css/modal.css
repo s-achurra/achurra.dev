@@ -104,6 +104,12 @@
   }
 }
 
+@media only screen and (max-height: 925px) {
+  .modal_content {
+    overflow: scroll;
+  }
+}
+
 /* The Close Button */
 .close {
     color: #aaa;
