@@ -47,14 +47,38 @@ nav {
   background-color: red;
 }
 
-.controls *, .name{
+.controls *, .name, .toggle-nav{
   padding: 15px;
   color: white;
   text-decoration: none;
 }
 
-.controls *:hover{
+.controls *:hover, .toggle-nav:hover{
   background-color: #555555;
+}
+
+.toggle-nav {
+  font-size: 1.8rem;
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+  .controls {
+    display: none;
+  }
+  .toggle-nav {
+    display: block;
+  }
+}
+
+.open-controls {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right: 0;
+  text-align: right;
+  padding: 0 25px 10px;
+  background-color: black;
 }
 
 .header {
