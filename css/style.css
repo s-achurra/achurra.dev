@@ -57,6 +57,10 @@ nav {
   background-color: #555555;
 }
 
+i.fa.fa-download {
+    padding-left: 0;
+}
+
 .toggle-nav {
   font-size: 1.8rem;
   display: none;

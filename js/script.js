@@ -1,4 +1,4 @@
-const navLinks = $('.controls a, .name').click(scrollToElement);
+const navLinks = $('.scroll, .name').click(scrollToElement);
 const overlays = $('.overlay');
 const modals = $('.modal');
 const menuNav = $('.toggle-nav');
