@@ -8,7 +8,7 @@ let activeModal;
 
 // smooth scroll
 
-function scrollToElement (e) {
+function scrollToElement(e) {
 	e.preventDefault();
 	$('html, body').animate({
 		scrollTop: $(e.target.hash).offset().top
@@ -17,7 +17,7 @@ function scrollToElement (e) {
 
 // modal
 
-function openModal () {
+function openModal() {
 	activeModal = $(`#${this.dataset.modal}`);
 	activeModal.css('visibility', 'visible');
 	activeModal.css('opacity', '1');
