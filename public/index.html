@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
     <title>Achurra.dev</title>
     <meta charset='UTF-8'>
@@ -14,7 +14,7 @@
     <link href='styles/reset.css' rel='stylesheet'>
     <link href='styles/main.css' rel='stylesheet'>
 
-    <link rel="icon" href="/assets/favicon.png">
+    <link rel="icon" href="/favicon.png">
 
     <script>
       // hotjar
@@ -38,21 +38,17 @@
     </script>
   </head>
   <body>
-    <div class="background-image"></div>
-    <div id="content">
-      <h1>achurra.dev</h1>
-      <ul>
-        <li class='uneven'><a href='https://github.com/s-achurra' class='icon' target='_blank'><i class='fa fa-github' aria-hidden='true'></i></a></li>
-        <li class='uneven'><a href='https://www.linkedin.com/in/stephen-achurra/' class="icon" target='_blank'><i class='fa fa-linkedin' aria-hidden='true'></i></a></li>
-        <li><a href='mailto:contact@achurra.dev' class="icon" target='_top'><i class='fa fa-envelope' aria-hidden='true'></i></a></li>
-      </ul>
-    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>
-<script>
-$(document).ready(function() {
-  $('.background-image').on('webkitAnimationEnd', function(e) {
-    $(this).addClass('visible');
-  });
-});
-</script>
