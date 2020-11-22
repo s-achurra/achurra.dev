@@ -1,5 +1,23 @@
 import './App.css';
+import LinkIcon from './components/LinkIcon';
 import { useEffect, useState } from 'react';
+
+const links = [
+  {
+    icon: 'fa-github',
+    href: 'https://github.com/s-achurra',
+    uneven: true,
+  },
+  {
+    icon: 'fa-linkedin',
+    href: 'https://www.linkedin.com/in/stephen-achurra/',
+    uneven: true,
+  },
+  {
+    icon: 'fa-envelope',
+    href: 'mailto:contact@achurra.dev',
+  },
+]
 
 function App() {
   const [backgroundClass, setBackgroundClass] = useState('background-image')
@@ -8,35 +26,21 @@ function App() {
     setBackgroundClass('background-image visible');
   }, [])
 
+  const linkItems = links.map((link, index) => {
+    return <LinkIcon href={link.href}
+              icon={link.icon}
+              key={index}
+              uneven={link.uneven}
+    />
+  })
+
   return (
     <div className="App">
       <div className={backgroundClass}></div>
       <div id="content">
         <h1>achurra.dev</h1>
         <ul>
-          <li className='uneven'>
-            <a href='https://github.com/s-achurra'
-               className='icon'
-               target='_blank'
-               rel="noreferrer">
-              <i className='fa fa-github' aria-hidden='true'></i>
-            </a>
-          </li>
-
-          <li className='uneven'>
-            <a href='https://www.linkedin.com/in/stephen-achurra/'
-               className="icon"
-               target='_blank'
-               rel="noreferrer">
-              <i className='fa fa-linkedin' aria-hidden='true'></i>
-            </a>
-          </li>
-
-          <li>
-            <a href='mailto:contact@achurra.dev' className="icon" target='_top'>
-              <i className='fa fa-envelope' aria-hidden='true'></i>
-            </a>
-          </li>
+          {linkItems}
         </ul>
       </div>
     </div>

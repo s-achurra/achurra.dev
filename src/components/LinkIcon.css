@@ -1,0 +1,49 @@
+li {
+  float: left;
+  margin-right: 2rem;
+  transition: 0.5s;
+}
+
+li.uneven {
+  transform: scale(1.1, 1);
+}
+
+li:hover {
+  transform: scale(1.25, 1.25);
+}
+
+li.uneven:hover {
+  transform: scale(1.36, 1.25);
+}
+
+i.fa {
+  display: inline-block;
+  font-size: 33px;
+  border-radius: 60px;
+  box-shadow: 0px 0px 4px #222;
+  padding: 1.6vw 1.6vw;
+}
+
+a {
+  color: #222;
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  i.fa {
+    padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  i.fa {
+    padding: 9.5px;
+  }
+}
