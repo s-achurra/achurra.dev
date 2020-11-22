@@ -1,0 +1,126 @@
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal_content {
+    background-color: #fefefe;
+    position: fixed;
+    margin: 10% 10%;
+    padding: 20px;
+    width: 80%;
+    height: 65vh;
+}
+
+.modal_body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modal_text {
+  margin: 10px auto 0;
+  padding: 0 40px;
+  flex: 2;
+  min-width: 350px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.modal_text ul {
+  list-style: circle;
+  padding-left: 40px;
+}
+
+.modal_text li {
+  margin : 5px 0;
+}
+
+.modal_images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.modal_image {
+  width: 300px;
+  height: 200px;
+  margin: 20px 10px;
+  min-width: 100px;
+  min-height: calc(100px * (2/3));
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 20px 0 50px 0;
+}
+
+.modal_links * {
+  text-decoration: none;
+  color: #222222;
+  transition: all 0.5s;
+  padding: 0 10px;
+}
+
+.modal_links *:hover {
+  color: #aa8c47;
+}
+
+@media only screen and (max-width: 960px) {
+  .modal_content {
+    overflow: scroll;
+    top: 90px;
+    margin: 0;
+    height: calc(100vh - 90px);
+    padding: 10%;
+  }
+  .modal_images {
+    flex-direction: row;
+  }
+  .modal_links {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .modal_images {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-height: 925px) {
+  .modal_content {
+    overflow: scroll;
+  }
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #222222;
+    text-decoration: none;
+    cursor: pointer;
+}
